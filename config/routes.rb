@@ -1,8 +1,15 @@
 Blitzproduct::Application.routes.draw do
-  resources :products
 
+  resources :products, :only=>[:index, :show]
+  namespace "admin" do
+    resources :products, :except=>[:index, :show]
+  end
 
-  resources :suppliers
+  resources :suppliers, :only=>[:index, :show]
+  namespace "admin" do
+    resources :suppliers, :except=>[:index, :show]
+  end
+    
 
 
   # The priority is based upon order of creation:
