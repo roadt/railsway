@@ -29,7 +29,8 @@
   </div>
   <div class="field">
     <%= f.label :supplier %><br />
-    <%= f.text_field :supplier %>
+    <%= select("product", "supplier_id", Supplier.all.collect {|p| [ p.name, p.id ] }) %>
+<!--    <%= f.text_field :supplier %> -->
   </div>
   <div class="actions">
     <%= f.submit %>

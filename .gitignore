@@ -13,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+# ignore the precompile assets
+/public/assets/
+/public/system/
+
+# ignore sass cache
+.sass-cache
+
