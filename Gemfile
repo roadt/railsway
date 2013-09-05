@@ -38,3 +38,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 gem 'client_side_validations'
+
+gem 'capistrano', '2.14.2'
+gem 'pry-rails', '0.3.1'
+gem 'thin', '1.5.1'
+
