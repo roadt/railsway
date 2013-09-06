@@ -1,5 +1,6 @@
 
 
+#---  stuff from github tempalte --
 *.rbc
 *.sassc
 .sass-cache
@@ -18,6 +19,7 @@ rerun.txt
 pickle-email-*.html
 
 
+#-- my peronsoanl stuff --
 *.tmp
 .#*
 *.sqlite3
