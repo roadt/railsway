@@ -40,3 +40,5 @@ gem 'jquery-rails'
 gem 'nifty-generators'
 
 gem 'geocoder'
+
+gem "mocha", :group => :test
