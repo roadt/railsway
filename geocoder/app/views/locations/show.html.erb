@@ -13,6 +13,9 @@
   <%= @location.longitude %>
 </p>
 
+<%=image_tag  "http://maps.googleapis.com/maps/api/staticmap?sensor=false&zoom=13&size=600x300&markers=#{@location.latitude}%2C#{@location.longitude}" %>
+
+
 <h3>Nearby Locations</h3>
 <ul>
 <% for location in @location.nearbys(10) %>
